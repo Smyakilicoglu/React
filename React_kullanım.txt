@@ -1,0 +1,68 @@
+Oluşturduğun dosyaya bunları yamazsan çalışmaz: 
+npm install react-scripts --save
+
+PowerShell:
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+
+Çok saçma olduğu için vscode'da çalışmayacağım.
+
+
+
+notes.map((x)=> {
+    return x * 2 
+})
+
+notes.map(function(x, y) {
+    return x * y
+})
+
+// tek bilinmeyen olursa paranteze almaya da gerek yok.
+notes.map( x => { 
+    return x * 2
+})
+
+// var numbers = [3, 56, 2, 48, 5];
+
+////Map -Create a new array by doing something with each item in an array.
+// const newNumbers = numbers.map(function (x) {
+//   return x * 2;
+// });
+// console.log(numbers.map( x => x *2))
+
+//////Filter - Create a new array by keeping the items that return true.
+// const newNumbers = numbers.filter(function(num) {
+//   return num < 10;
+// });
+// console.log(numbers.filter( num => num < 20))
+
+//Reduce - Accumulate a value by doing something to each item in an array.
+// var newNumber = numbers.reduce(function (accumulator, currentNumber) {
+//     return accumulator + currentNumber;
+// })
+// console.log(numbers.reduce((accumulator, currentNumber) => { 
+    return accumulator + currentNumber
+}))
+
+////Find - find the first item that matches from an array.
+// const newNumber = numbers.find(function (num) {
+//   return num > 10;
+// })
+// console.log(numbers.find(num => num > 10))
+
+////FindIndex - find the index of the first item that matches.
+// const newNumber = numbers.findIndex(function (num) {
+//   return num > 10;
+// })
+// console.log(numbers.findIndex( num => num > 10))
+
+//(5) [6, 112, 4, 96, 10]
+(3) [3, 2, 5] //sınıra göre olanlar
+114 //Topla
+56 //Sınıra uyan ilk sayı
+1 //56
+console'da yazanlar.
+
+{/*Ternary Operator*/}
+    {isLoggedIn ? <h1>Hello</h1> : <Login />}
+{/*AND Operator*/}
+    {currentTime > 24 && <h1>Why are you still working?</h1>}
